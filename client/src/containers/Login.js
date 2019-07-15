@@ -95,13 +95,13 @@ class Login extends Component {
                 <span className="errorMessage">{formErrors.email}</span>
               )}
             </div>
-            <div className="loginPassword">
+            <div className="password">
               <label htmlFor="password">Password</label>
               <input
                 className={formErrors.password.length > 0 ? "error" : null}
                 placeholder="Password"
                 type="password"
-                name="loginPassword"
+                name="password"
                 noValidate
                 onChange={this.handleChange}
               />

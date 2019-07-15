@@ -1,7 +1,7 @@
 import React from 'react';
 import './Search.css'
 
-class Guest extends React.Component {
+class Search extends React.Component {
     state = { term: '' }
     onInputChange = (event) => {
         this.setState({ term: event.target.value })
@@ -29,4 +29,4 @@ class Guest extends React.Component {
     }
 }
 
-export default Guest;
+export default Search;

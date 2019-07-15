@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333;
+ background-color: transparentr gba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

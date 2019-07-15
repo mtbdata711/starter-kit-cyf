@@ -1,20 +1,19 @@
-.App {
+/* .App {
   text-align: center;
 }
 
 .App {
-  margin-top: 15px;
-  background-color: white
+  margin-top: 0px;
+  background-color: white;
 }
 
-.container-fluid{
-    border-width:0;
-    box-shadow:none;
-    background-color:white
+.container-fluid {
+  border-width: 0;
+  box-shadow: none;
+  background-color: white;
 }
 .navbar {
-    
-    border: 0;
+  border: 0;
 }
 
 .App-logo {
@@ -22,10 +21,10 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-
-
-
+.navbar {
+  height: 4.4em;
+  border: 0;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -34,4 +33,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
