@@ -80,6 +80,24 @@ api.post('/addterm', helper.isValidQuery(), function(request, response) {
 })
 
 
+api.get("/getAll", (_, res, next) => {
+  const client = getClient();
+
+  client.connect(err => {
+    const db = client.db("glossary");
+    const collection = db.collection("definitions");
+
+    if (err) {
+      return next(err);
+    }
+    collection.find({}).toArray(function(error, def) {
+      res.send(error || def);
+
+      client.close();
+    });
+  });
+});
+
 
 
 api.get("/", (_, res, next) => {
