@@ -8,12 +8,15 @@ export class Fetcher {
   }
 
   async fetchTermByPath(props) {
-    const { match: { params } } = props;
-    const url = `${this.url}/singleterm?term=${params.term}&topic=${params.topic}`
+    const {
+      match: { params }
+    } = props;
+    const url = `${this.url}/singleterm?term=${params.term}&topic=${
+      params.topic
+    }`;
     console.log(url);
-    var response = await fetch(url)
-    response =  await response.json()
-  return response
+    var response = await fetch(url);
+    response = await response.json();
+    return response;
   }
-
 }
