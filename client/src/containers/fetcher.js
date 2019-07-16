@@ -1,6 +1,6 @@
 export class Fetcher {
-  constructor(url = "http://localhost:3000/api") {
-    this.url = url;
+  constructor(url = '/api') {
+    this.url = url
   }
   // Getter
   get getURL() {
